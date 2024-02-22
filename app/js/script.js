@@ -8,6 +8,16 @@ const app = createApp({
         tasks: [],
         newTask: ''
     }),
+    methods: {
+        addNewTask() {
+            const data = { task: this.newTask };
+            const config = { headers: { 'Content-Type': 'multipart/form-data' } };
+
+            axios.post(endpoint, data, config).then(res => {
+                this.tasks = res.data;
+            })
+        }
+    },
     created() {
         axios.get(endpoint).then(res => {
             this.tasks = res.data;
