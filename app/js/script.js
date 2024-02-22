@@ -6,7 +6,7 @@ const { createApp } = Vue;
 const app = createApp({
     data: () => ({
         tasks: [],
-        newTask= ''
+        newTask = ''
     }),
     created() {
         axios.get(endpoint).then(res => {
