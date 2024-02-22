@@ -15,6 +15,7 @@ const app = createApp({
 
             axios.post(endpoint, data, config).then(res => {
                 this.tasks = res.data;
+                this.newTask = '';
             })
         }
     },
