@@ -5,7 +5,8 @@ const endpoint = 'http://localhost/boolean/php-todo-list-json/api/tasks';
 const { createApp } = Vue;
 const app = createApp({
     data: () => ({
-        tasks: []
+        tasks: [],
+        newTask= ''
     }),
     created() {
         axios.get(endpoint).then(res => {
