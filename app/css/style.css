@@ -8,4 +8,14 @@
 /* General */
 body {
     font-family: "Fenix", serif;
+    background-color: #0D1B2A;
+}
+
+h1 {
+    font-size: 100px;
+    color: #E0E1DD;
+}
+
+li {
+    font-size: 2rem;
 }
