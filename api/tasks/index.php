@@ -18,7 +18,7 @@ if($new_task) {
 
     $tasks = json_encode($tasks);
 
-    file_put_contents($tasks);
+    file_put_contents($data_path, $tasks);
 }
 
 echo $tasks;
