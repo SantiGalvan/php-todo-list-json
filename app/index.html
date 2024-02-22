@@ -40,11 +40,9 @@
             <h1 class="text-center">Todo List</h1>
             <div class="todo-list">
                 <ul class="list-group col-5 mx-auto">
-                    <li class="list-group-item list-group-item-dark">An item</li>
-                    <li class="list-group-item list-group-item-dark">A second item</li>
-                    <li class="list-group-item list-group-item-dark">A third item</li>
-                    <li class="list-group-item list-group-item-dark">A fourth item</li>
-                    <li class="list-group-item list-group-item-dark">And a fifth one</li>
+                    <li class="list-group-item list-group-item-dark" v-for="task in tasks" :key="task.id">
+                        {{ task.text }}
+                    </li>
                 </ul>
             </div>
         </div>
