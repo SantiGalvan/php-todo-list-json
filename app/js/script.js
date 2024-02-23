@@ -1,5 +1,5 @@
 
-const endpoint = 'http://localhost/boolean/php-todo-list-json/api/tasks';
+const endpoint = 'http://localhost/boolean/php-todo-list-json/api/tasks/';
 
 // Attivo Vue
 const { createApp } = Vue;
