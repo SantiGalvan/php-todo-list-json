@@ -46,7 +46,7 @@
             <div class="todo-list">
                 <ul class="list-group col-5 mx-auto mb-4">
                     <li role="button" class="list-group-item list-group-item-dark" v-for="task in tasks" :key="task.id">
-                        {{ task.text }}
+                        <span :class="{'text-decoration-line-through': task.done == true}">{{ task.text }}</span>
                     </li>
                 </ul>
             </div>
